@@ -25,6 +25,11 @@ public class Flight {
         return this.passengers.size();
     }
 
+    public void addPassenger(Passenger passenger) {
+        this.passengers.add(passenger);
+    }
+
+
 //    public int getNumberOfAvailableSeats(){
 //        ArrayList<Passenger> availableSeats = new ArrayList<Passenger>();
 //        for (Passenger passenger :this.passengers){
