@@ -35,6 +35,12 @@ public class FlightTest {
     public void canAddPassenger(){
         flight.addPassenger(passenger);
         assertEquals(1, flight.passengerCount());
+    }
 
+
+    @Test
+    public void canBookAvailableSeats(){
+        ArrayList<Passenger> bookAvailableSeats = flight.getNumberOfAvailableSeats();
+        assertEquals(0, bookAvailableSeats.size());
     }
 }

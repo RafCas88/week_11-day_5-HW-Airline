@@ -30,13 +30,13 @@ public class Flight {
     }
 
 
-//    public int getNumberOfAvailableSeats(){
-//        ArrayList<Passenger> availableSeats = new ArrayList<Passenger>();
-//        for (Passenger passenger :this.passengers){
-//            if(passenger.passengerCount() == 0){
-//                availableSeats.add(passenger);
-//            }
-//        }
-//        return availableSeats;
-//    }
+    public ArrayList<Passenger> getNumberOfAvailableSeats(){
+        ArrayList<Passenger> availableSeats = new ArrayList<Passenger>();
+        for (Passenger passenger :this.passengers){
+            if(passenger.passengerCount() == 0){
+                availableSeats.add(passenger);
+            }
+        }
+        return availableSeats;
+    }
 }
